@@ -26,6 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2% 5%;
+  border: 2px solid red;
 }
 
 .demo-btn {
@@ -89,7 +90,7 @@ header {
 main {
   display: flex;
   justify-content: space-between;
-  margin: 2% 5%;
+  margin: 0 5%;
 }
 
 .main-img {
@@ -113,13 +114,13 @@ main {
   border-radius: 15px;
   padding: 22.5px;
   margin-top: 30px;
-  width: 320px;
+  width: 265px;
+  line-height: 20px;
 }
 
 .txt-section {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
 }
 
 .testimonial {
@@ -135,13 +136,13 @@ main {
   border-radius: 40px;
 }
 
-input[type='email'] {
+/* input[type='email'] {
   width: 250px;
   padding: 13px;
   border: 1px solid black;
   outline: none;
   border-radius: 3px;
-}
+} */
 
 input[type='button'] {
   width: 165px;
@@ -152,9 +153,13 @@ input[type='button'] {
   border-radius: 3px;
 }
 
-/* .box > p {
-  width: 50%;
-} */
+.box > p {
+  font-size: small;
+}
+
+.second-txt {
+  color: #ffffff;
+}
 .section_container {
   background-image: url(../images/bg-curve-desktop.svg);
   background-size: cover;
@@ -192,6 +197,47 @@ input[type='button'] {
   align-items: center;
 }
 
+.email_box {
+  width: 250px;
+  padding: 13px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 3px;
+}
+
+.email_box2 {
+  width: 400px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 3px;
+}
+
+/* .second-form {
+  padding-right: 150px !important;
+} */
+
+.testimony_txt {
+  font-size: x-small;
+  margin-left: 10px;
+}
+
+.bold_txt {
+  font-weight: 700;
+}
+
+.txt_underline {
+  line-height: 8px;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  width: max-content;
+  padding-bottom: 7px;
+}
+.txt_underline > a {
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+}
+
 .notify_box {
   margin-left: 20%;
   margin-right: 20%;
@@ -221,6 +267,10 @@ footer {
   margin-top: 0;
   display: flex;
   align-items: center;
+}
+
+.footer4 {
+  margin: 46px;
 }
 
 .footer_txt {
@@ -303,6 +353,19 @@ ul {
 }
 
 @media (max-width: 600px) {
+  .email_box2 {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 16px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
   .demo-btn {
     width: 120px;
     padding: 5px;
